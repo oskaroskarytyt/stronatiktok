@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RudyWolfAgency — Agencja TikTok</title>
+  <meta name="description" content="RudyWolfAgency — profesjonalna agencja wspierająca twórców TikTok LIVE. Wsparcie, managerowie, rozwój i monetyzacja." />
+
+  <style>
+    :root{
+      --bg:#0d111a;
+      --card:#0f1625;
+      --muted:#9aa4b2;
+      --accent:#ff005c;
+      --accent2:#ff6a8a;
+      --radius:14px;
+      --maxw:1100px;
+      --gap:20px;
+      font-family: Inter, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071226,#0e1420);
+      color:#e6eef6;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+    }
+    .site{width:100%;max-width:var(--maxw)}
+
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      margin-bottom:30px;
+    }
+    .brand{display:flex;gap:15px;align-items:center}
+    .logo{
+      width:56px;height:56px;border-radius:14px;
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      display:flex;align-items:center;justify-content:center;
+      font-weight:900;font-size:22px;color:#fff;
+      box-shadow:0 6px 20px rgba(255,0,92,0.25);
+    }
+    nav a{
+      color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px;
+    }
+    nav a.cta{
+      padding:10px 16px;border-radius:10px;color:white;font-weight:600;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.4);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .hero{
+      display:grid;grid-template-columns:1fr 360px;
+      gap:var(--gap);margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      border-radius:12px;color:white;
+      text-decoration:none;font-weight:700;
+      box-shadow:0 8px 20px rgba(255,0,92,0.2);
+    }
+    .stats{display:flex;gap:14px;margin-top:18px}
+    .stat{background:rgba(255,255,255,0.05);padding:12px;border-radius:10px;text-align:center;min-width:100px}
+    .stat b{font-size:18px;display:block}
+    .muted{color:var(--muted)}
+
+    .grid-3{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+    }
+
+    .team{display:flex;gap:12px;margin-top:14px}
+    .avatar{
+      width:64px;height:64px;border-radius:12px;
+      background:linear-gradient(135deg,#1a2435,#111926);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:white;font-size:18px;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    input,textarea,select{
+      width:100%;padding:12px;border-radius:10px;
+      background:#111827;border:1px solid rgba(255,255,255,0.06);
+      color:white;outline:none;font-size:14px;
+    }
+    textarea{min-height:120px;}
+
+    footer{text-align:center;margin-top:30px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+    @media(max-width:640px){
+      header{flex-direction:column;align-items:flex-start}
+      .grid-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<div class="site">
+
+<header>
+  <div class="brand">
+    <div class="logo">RW</div>
+    <div>
+      <h1 style="margin:0;font-size:22px;">RudyWolfAgency</h1>
+      <div class="muted" style="font-size:13px;">Agencja wspierająca twórców TikTok LIVE</div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#oferta">Oferta</a>
+    <a href="#team">Zespół</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt" class="cta">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="card">
+    <h2>Profesjonalne wsparcie dla twórców TikTok LIVE</h2>
+    <p class="muted">Otrzymasz managera, analizę transmisji, pomoc techniczną, strategię wzrostu i realną monetyzację profilu.</p>
+    <a href="#kontakt" class="btn">Dołącz do agencji</a>
+
+    <div class="stats">
+      <div class="stat"><b>+300</b><span class="muted">Wspartych LIVE</span></div>
+      <div class="stat"><b>50+</b><span class="muted">Twórców</span></div>
+      <div class="stat"><b>5.0/5</b><span class="muted">Ocena agencji</span></div>
+    </div>
+  </div>
+
+  <aside class="card">
+    <h3>Kontakt szybki</h3>
+    <p class="muted">Email: <a href="mailto:agusia5@int.pl" style="color:#fff">agusia5@int.pl</a></p>
+    <p class="muted">Telefon: +48 000 000 000</p>
+
+    <h4 style="margin-top:20px;">Co zapewniamy:</h4>
+    <ul class="muted" style="margin-left:20px;">
+      <li>Indywidualny manager</li>
+      <li>Szkolenia techniczne</li>
+      <li>Scenariusze transmisji</li>
+      <li>Optymalizacja treści</li>
+      <li>Wsparcie przy współpracach</li>
+    </ul>
+  </aside>
+</section>
+
+<section id="oferta" class="card">
+  <h2>Oferta — pakiety wsparcia</h2>
+  <p class="muted">Dopasowane do poziomu i potrzeb twórcy</p>
+
+  <div class="grid-3" style="margin-top:16px;">
+    <div class="card">
+      <h3>Start</h3>
+      <p class="muted">Konfiguracja LIVE, onboarding, 4 tygodnie opieki.</p>
+    </div>
+
+    <div class="card">
+      <h3>Growth</h3>
+      <p class="muted">Strategia wzrostu, analiza statystyk, mentoring.</p>
+    </div>
+
+    <div class="card">
+      <h3>Pro</h3>
+      <p class="muted">Manager 360°, współprace z markami, pełna obsługa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="card">
+  <h2>Administracja</h2>
+  <p class="muted">Zespół odpowiedzialny za rozwój twórców.</p>
+
+  <div class="team">
+    <div class="avatar">OS</div>
+    <div><strong>Oskareq</strong><br><span class="muted">Administrator / Manager</span></div>
+  </div>
+
+  <div class="team">
+    <div class="avatar">TR</div>
+    <div><strong>Truskawka</strong><br><span class="muted">Administrator / Specjalista LIVE</span></div>
+  </div>
+</section>
+
+<section id="faq" class="card">
+  <h2>FAQ — najczęściej zadawane pytania</h2>
+
+  <h3>Jak mogę dołączyć?</h3>
+  <p class="muted">Wypełnij formularz lub napisz maila — odpowiadamy w 48h.</p>
+
+  <h3>Czy współpraca jest płatna?</h3>
+  <p class="muted">Nie, agencja zarabia poprzez procent z giftów — brak kosztów startowych.</p>
+
+  <h3>Co otrzymuje twórca?</h3>
+  <p class="muted">Managera, szkolenia, optymalizację LIVE, wsparcie techniczne i strategię rozwoju.</p>
+
+  <h3>Czy pomagacie w współpracach z markami?</h3>
+  <p class="muted">Tak, przygotowujemy oferty, wyceny i prowadzimy negocjacje.</p>
+</section>
+
+<section id="kontakt" class="card">
+  <h2>Kontakt</h2>
+  <p class="muted">Napisz do nas, a odezwiemy się w 48 godzin.</p>
+
+  <form>
+    <input type="text" placeholder="Imię i nazwisko" required />
+    <input type="email" placeholder="Adres e-mail" required />
+    <input type="text" placeholder="Nazwa TikTok (np. @nick)" />
+    <textarea placeholder="Twoja wiadomość"></textarea>
+    <button class="btn" type="submit" style="margin-top:10px;border:none;cursor:pointer;">Wyślij</button>
+  </form>
+</section>
+
+<footer>
+  © <span id="year"></span> RudyWolfAgency — Wszystkie prawa zastrzeżone
+</footer>
+
+</main>
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
